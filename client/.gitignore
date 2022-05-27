@@ -1,56 +1,58 @@
-.DS_Store
-.env
-.gclient_done
-**/.npmrc
-.tags*
-.vs/
-.vscode/
-*.log
-*.pyc
-*.sln
-*.swp
-*.VC.db
-*.VC.VC.opendb
-*.vcxproj
-*.vcxproj.filters
-*.vcxproj.user
-*.xcodeproj
-/.idea/
+.DS_STORE
+
 /dist/
-node_modules/
-SHASUMS256.txt
-**/package-lock.json
-compile_commands.json
-.envrc
+/bazel-out
+/integration/bazel/bazel-*
+*.log
+node_modules
 
-# npm package
-/npm/dist
-/npm/path.txt
-/npm/checksums.json
+# CircleCI temporary file for cache key computation.
+# See `save_month_to_file` in `.circleci/config.yml`.
+month.txt
 
-.npmrc
+# Include when developing application packages.
+pubspec.lock
+.c9
+.idea/
+.devcontainer/*
+!.devcontainer/README.md
+!.devcontainer/recommended-devcontainer.json
+!.devcontainer/recommended-Dockerfile
+.settings/
+.vscode/launch.json
+.vscode/settings.json
+.vscode/tasks.json
+*.swo
+*.swp
+modules/.settings
+modules/.vscode
+.vimrc
+.nvimrc
 
-# Generated API definitions
-electron-api.json
-electron.d.ts
+# Don't check in secret files
+*secret.js
 
-# Spec hash calculation
-spec/.hash
+# Ignore npm/yarn debug log
+npm-debug.log
+yarn-error.log
 
-# Eslint Cache
-.eslintcache*
+# build-analytics
+.build-analytics
 
-# Generated native addon files
-/spec-main/fixtures/native-addon/echo/build/
+# rollup-test output
+/modules/rollup-test/dist/
 
-# If someone runs tsc this is where stuff will end up
-ts-gen
+# User specific bazel settings
+.bazelrc.user
 
-# Used to accelerate CI builds
-.depshash
-.depshash-target
+# User specific ng-dev settings
+.ng-dev.user*
 
-# Used to accelerate builds after sync
-patches/mtime-cache.json
+.notes.md
+baseline.json
 
-spec/fixtures/logo.png
+# Ignore .history for the xyz.local-history VSCode extension
+.history
+
+# Husky
+.husky/_
