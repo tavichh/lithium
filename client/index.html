@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
-    <link href="./styles.css" rel="stylesheet">
-    <title>Hello World!</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
 
-    <!-- You can also require other files to run in this process -->
+<head>
+  <link href="styles.css" rel="stylesheet" />
+  <link href="tuicss.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="center" style="margin-top: 250px;">
+    <div class="tui-window blue-168"  id='search' style="width: 200px;">
+    
+      <fieldset class="tui-fieldset">
+        PROGRAM ID
+        <input class="tui-input input-id" id="input">
+        <button class="tui-button btn-load" onclick="getInput()">LOAD PROGRAM</button>
+        <div class="tui-progress-bar pb-program"> </div>
+      </fieldset>
+    </div>
     <script src="./renderer.js"></script>
-  </body>
+</body>
+
 </html>

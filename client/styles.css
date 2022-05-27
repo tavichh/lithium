@@ -1,3 +1,19 @@
 /* styles.css */
 
 /* Add styles here to customize the appearance of your app */
+
+body {
+  background-color: black;
+  color: white;
+}
+.input-id {
+  color: white;
+}
+.btn-load {
+  margin-top: 10px;
+  width: 200px;
+}
+
+.pb-program{
+  margin-top: 10px;
+}
